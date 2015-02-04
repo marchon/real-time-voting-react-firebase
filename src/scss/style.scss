@@ -1,0 +1,216 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #F5F5F5;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.VotingApp {
+	width: 100%;
+}
+
+.Header {
+	background: #E5E5E5;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.ContentContainer {
+	box-sizing: border-box;
+	margin: 20px auto 0;
+	width: 80%;
+	min-width: 480px;
+}
+
+.Button {
+	border: 1px solid #BCBCBC;
+	box-sizing: border-box;
+	border-radius: 2px;
+	cursor: pointer;
+	display: block;
+	font-weight: bold;
+	padding: 6px 10px;
+	outline: 0;
+	box-shadow: inset 0 0 6px rgba(255,255,255,0.25);
+	
+	&:hover {
+		box-shadow: inset 0 0 6px rgba(255,255,255,0.4);
+	}
+	
+	&:active {
+		box-shadow: none;
+	}
+	
+}
+
+.Button--add,
+.Button--save,
+.Button--cancel {
+	color: #FFF;
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: center;
+}
+	
+.Button--add {
+	background-color: #337AB7;
+	border-color: #2E6DA4;
+	width: 100%;
+	
+	&.hidden {
+		display: none !important;
+	}
+}
+	
+.Button--save {
+	background-color: #449D44;
+	border-color: #398439;
+	margin-top: 20px;
+	width: 80%;
+}
+	
+.Button--cancel {
+	background-color: #d9534f;
+	border-color: #d43f3a;
+	margin-left: 2%;
+	width: 18%;
+}
+
+.FeedsForm {
+	display: block;
+	
+	&.hidden {
+		display: none !important;
+	}
+}
+
+.FeedsContainer {
+	display: block;
+	text-align: center;
+	width: 100%;
+
+	.Input {
+		background: #FFF;
+		border: 1px solid #D9D9D9;
+		border-radius: 3px;
+		box-sizing: border-box;
+		display: inline-block;
+		font-size: 14px;
+		padding: 10px;
+		width: 32%;
+	}
+	
+	.Input--center {
+		margin: 0 2%;
+	}
+}
+
+.FeedList {
+	background: #FFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 5px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	
+	&.hidden {
+		display: none !important;
+	}
+}
+
+.FeedItem {
+	border-top: 1px solid #D9D9D9;
+	padding: 20px;
+	
+	/* Flex Box */
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: stretch;
+	justify-content: flex-start;
+	
+	&:first-child {
+		border-top: 0;
+	}
+}
+
+.Vote {
+	width: 36px;
+	height: 100%;
+	margin: auto;
+	margin-right: 0;
+	text-align: center;
+	
+	.Button--voteUp,
+	.Button--voteDown {
+		background-color: #31B0D5;
+		border-color: #269ABC;		
+		color: #FFF;
+	}
+	
+	.Button--voteUp {
+		width: 36px;
+		height: 36px;
+	}
+	
+	.Button--voteDown {
+		margin-top: 2px;
+		width: 36px;
+		height: 36px;
+	}
+}
+
+.VoteCount {
+	border-radius: 3px;
+	color: #FFF;
+	line-height: 74px;
+	font-weight: bold;
+	margin: auto 0;
+	margin-left: 0;
+	text-align: center;
+	width: 58px;
+	height: 74px;
+	
+	&.VoteCount--success {
+		background: #359934;
+	}
+	
+	&.VoteCount--fail {
+		background: #C22B23;
+	}
+}
+
+.ItemInfo {
+	margin: auto;
+	margin-left: 20px;
+	width: 80%;
+	height: 100%;
+	
+	& > p {
+		color: #555;
+		font-size: 14px;
+		margin: 5px 0 0 0;
+	}
+}
+
+.ItemTitle {
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+}
